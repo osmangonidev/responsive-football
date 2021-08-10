@@ -32,8 +32,6 @@ img{
 .main-header{
     display: flex;
     justify-content: space-between;
-    padding: 0 0.7rem;
-   
 }
 
 .bars-icon > .fa-bars{
