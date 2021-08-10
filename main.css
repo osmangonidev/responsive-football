@@ -1,6 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     color: #fff;
+    margin: 0;
 }
 
 a{
@@ -14,8 +15,8 @@ img{
 
 .common-button{
     background: #E02C6D;
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 500;
     padding: 0.5rem 0.8rem;
     display: inline-block;
 }
@@ -35,6 +36,10 @@ img{
    
 }
 
+.bars-icon > .fa-bars{
+    font-size: 1.5rem;
+}
+
 
 /* Banner section style start */
 .banner{
@@ -51,11 +56,13 @@ img{
 }
 
 /* Players section style start */
-.players{}
+.players{
+    margin-top: 3rem;
+}
 
 .player{
     color: #000;
-    margin:2rem 0.2rem;
+    margin:2rem 0.7rem;
     padding:1.5rem;
     box-shadow: 3px 3px 5px 5px lightgray;
 }
