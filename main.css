@@ -1,0 +1,69 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+img{
+    max-width: 100%;
+}
+
+.common-button{
+    background: #E02C6D;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.5rem 0.8rem;
+    display: inline-block;
+}
+
+.backdrop{}
+
+.top-part{
+    background: #2D25A0;
+    padding: 2.5rem 1rem;
+;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.7rem;
+   
+}
+
+
+/* Banner section style start */
+.banner{
+    
+}
+
+.banner__info>h1{
+    font-size:2.4rem;
+    font-weight: 700;
+}
+
+.banner__image{
+    padding-top: 3rem;
+}
+
+/* Players section style start */
+.players{}
+
+.player{
+    color: #000;
+    margin:2rem 0.2rem;
+    padding:1.5rem;
+    box-shadow: 3px 3px 5px 5px lightgray;
+}
+
+.player__image{
+    
+}
+
+.player__info>p{
+    line-height: 1.7;
+}
