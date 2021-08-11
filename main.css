@@ -29,6 +29,7 @@ p{
 .top-part{
     background: #2D25A0;
     padding: 2.5rem 1rem;
+    padding-top: 1.5rem;
 ;
 }
 
@@ -39,6 +40,50 @@ p{
 
 .bars-icon > .fa-bars{
     font-size: 1.5rem;
+}
+
+.desktop-nav{
+    width: 60%;
+    display: none;
+}
+
+.desktop-nav>.nav-items{ 
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.mobile-nav {
+    width: 100vh;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 10;
+    position: relative;
+    padding-top: 3rem;
+    display: none;
+}
+
+.mobile-nav>.cross-icon{
+    position: absolute;
+    color: black;
+    font-size: 2rem;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+    display: none;
+}
+
+.mobile-nav>.nav-items{
+    list-style: none;
+    text-align: center;
+}
+
+.mobile-nav li{
+    padding: 1rem 0;
+}
+
+.mobile-nav a{
+    color: #000;
 }
 
 .login-button__image{
@@ -64,6 +109,31 @@ p{
     padding-top: 3rem;
 }
 
+@media (min-width:40rem) {
+    .desktop-nav{
+        display: block;
+    }
+
+    .bars-icon{
+        display: none;
+    }
+
+    .banner{
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .banner__info,
+    .banner__image{
+        width: 45%;
+    }
+
+    .banner__info > h1{
+        font-size: 4rem;
+    }
+}
+
 /* Players section style start */
 .players{
     margin-top: 3rem;
@@ -76,6 +146,20 @@ p{
     box-shadow: 3px 3px 5px 5px lightgray;
 }
 
+@media (min-width:40rem){
+    .players{
+        max-width: 1200px;
+        margin: 3rem auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,auto);
+    }
+
+    .player{
+
+    }
+}
+
 /*Highlighted section style start*/
 .highlighted{
     color: #000;
@@ -84,6 +168,27 @@ p{
 
 .highlighted__image{
     margin-top: 2rem;
+}
+
+@media (min-width:40rem){
+    .highlighted{
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .highlighted__description{
+        margin:  auto 0;
+        margin-right: 1.5rem;
+    }
+
+    .highlighted__description>h1{
+        font-size: 2.8rem;
+    }
+
+    .highlighted__description>p{
+        font-size: 1.2rem;
+    }
 }
 
 /* Footer section style start */
@@ -105,4 +210,22 @@ p{
 
 .main-footer p{
     font-size: 1.3rem;
+}
+
+@media (min-width:40rem) {
+    .main-footer{
+        margin-top: 5rem;
+    }
+    .main-footer__logo img{
+        width: 35rem;
+    }
+
+    .main-footer__social-icons img{
+        width: 3rem;
+        padding: 0 0.5rem;
+    }
+
+    .main-footer p{
+        font-size: 1.3rem;
+    }
 }
